@@ -20,6 +20,10 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!\n");
        games myobj = new football();
+       games myobj1 = new volleyball();
+       games myobj2 = new games();
         myobj.play();
+        myobj1.play();
+        myobj2.play();
     }
 }
