@@ -6,7 +6,6 @@ public class BankingApp{
         Scanner sacnner = new Scanner(System.in);
         System.out.println("****************Banking App************");
         Account acc = new Account();
-
         int expression;
         do {
             System.out.println("Total amount in account: Rs\t" + acc.bankBalance);
