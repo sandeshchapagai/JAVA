@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
+
 public class BankingApp{
     public static void main(String[] ar) {
         Scanner sacnner = new Scanner(System.in);
@@ -21,7 +22,6 @@ public class BankingApp{
                     double b = acc.deposit(a);
                     System.out.println("Amount you have right know:\n" + b);
                     break;
-
                 case 2:
                     System.out.println("Amount to withdraw");
                     double m = sacnner.nextDouble();
@@ -29,14 +29,10 @@ public class BankingApp{
                     System.out.println("Amount you have right know:\t" + n);
                     System.out.println("\n");
                     break;
-
                 default:
                     System.out.println("You Should choose the right option");
                     System.out.println("\n");
-
-
             }
-
         } while (expression != 3);
 
 
