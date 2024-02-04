@@ -1,13 +1,13 @@
 public class AccountCreator {
     private int account_number = 0;
-    private int inital_balance = 0;
+    private double inital_balance = 0;
 
     public double getAccountNumber() {
 
         return this.account_number;
     }
 
-    public double setBalance(int inital_balance, int newBalance) {
+    public double setBalance(double newBalance) {
         this.inital_balance = newBalance;
         return this.inital_balance;
     }

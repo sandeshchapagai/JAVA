@@ -1,32 +1,38 @@
-public class Account {
-    public double accountNumber;
-    public double bankBalance = 0;
+public class Account extends AccountCreator{
+    public double initial_balance = 0;
+
+    double Account_details(double y){
+        setBalance(y);
+        initial_balance=getAccountNumber();
+        return  initial_balance;
+    }
+
 
     double deposit(double amount) {
-        bankBalance = bankBalance + amount;
-        return bankBalance;
+        initial_balance = initial_balance + amount;
+        return initial_balance;
     }
 
     double withdraw(double amount) {
-        if (bankBalance  < amount){
-            System.out.println("You have not that much money in account you have only Rs:\t"+bankBalance);
+        if (initial_balance < amount){
+            System.out.println("You have not that much money in account you have only Rs:\t"+ initial_balance);
             System.out.println("\n");
         }
         else {
 
-            bankBalance = bankBalance - amount;
-            if (bankBalance <= 0) {
+            initial_balance = initial_balance - amount;
+            if (initial_balance <= 0) {
                 System.out.println("You have not enough money to withdraw");
                 System.out.println("\n");
             }
         }
-        return bankBalance;
+        return initial_balance;
     }
 
     void display_balance() {
-        if(bankBalance<=0)
+        if(initial_balance <=0)
             System.out.println("You have not enough money to withdraw\n");
         else
-            System.out.println("Total deposite amount is :\t" + bankBalance);
+            System.out.println("Total deposite amount is :\t" + initial_balance);
     }
 }
