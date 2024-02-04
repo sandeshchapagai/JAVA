@@ -1,5 +1,29 @@
 import java.util.Scanner;
 
+
+
+class AccountCreator {
+    private double account_number;
+    private double initial_balance = 0;
+
+    public double getAccountNumber() {
+        return this.account_number;
+    }
+
+    public double setBalance(double newBalance) {
+        this.initial_balance = newBalance;
+        return this.initial_balance;
+    }
+
+    public double getBalance() {
+        return this.initial_balance;
+    }
+
+    public double setAccountNumber(double newAccountNumber) {
+        this.account_number = newAccountNumber;
+        return this.account_number;
+    }
+}
 class Account extends AccountCreator {
 
     public double deposit(double amount) {
@@ -31,29 +55,19 @@ class Account extends AccountCreator {
     }
 }
 
-class AccountCreator {
-    private double account_number;
-    private double initial_balance = 0;
 
-    public double getAccountNumber() {
-        return this.account_number;
+class  FastCash {
+    private  Account account;
+
+    FastCash(Account account) {
+        this.account = account;
+    }
+    public  void withdrawlfast(){
+
+
     }
 
-    public double setBalance(double newBalance) {
-        this.initial_balance = newBalance;
-        return this.initial_balance;
-    }
-
-    public double getBalance() {
-        return this.initial_balance;
-    }
-
-    public double setAccountNumber(double newAccountNumber) {
-        this.account_number = newAccountNumber;
-        return this.account_number;
-    }
 }
-
 public class BankingApp {
     public static void main(String[] ar) {
         Scanner scanner = new Scanner(System.in);
