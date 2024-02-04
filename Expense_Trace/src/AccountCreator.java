@@ -1,5 +1,5 @@
 public class AccountCreator {
-    private int account_number = 0;
+    private double account_number = 0;
     private double inital_balance = 0;
 
     public double getAccountNumber() {
@@ -17,7 +17,7 @@ public class AccountCreator {
         return this.inital_balance;
     }
 
-    public double setAccountNumber(int account_number, int newacc_number) {
+    public double setAccountNumber(double newacc_number) {
         this.account_number = newacc_number;
         return this.account_number;
     }
