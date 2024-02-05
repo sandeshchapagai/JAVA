@@ -107,6 +107,7 @@ public class BankingApp {
                     System.out.println("Amount you have right now: Rs\t" + remainingBalance);
                     System.out.println("\n");
                     break;
+
                 case 3:
                     System.out.println("Exiting the application");
                     break;
